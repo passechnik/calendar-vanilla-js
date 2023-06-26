@@ -78,3 +78,10 @@ body {
     text-align: center;
     width: 2.4rem;
 }
+
+.calendar__day-number--current {
+    background-color: var(--main-dark-color);
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.4rem var(--main-dark-color);
+    color: var(--white-color);
+}

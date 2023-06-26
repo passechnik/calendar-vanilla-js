@@ -14,11 +14,11 @@ document.getElementById('year').innerText = currentYear;
 //create grid of days
 let daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
 let week = document.createElement('div');
-week.classList.add('.calendar__day-numbers-row');
+week.classList.add('calendar__day-numbers-row');
 
 for (i = 1; i <= daysInMonth; i++) {
     let day = document.createElement('span');
-    day.classList.add('.calendar__day-number');
+    day.classList.add('calendar__day-number');
     day.innerText = i;
     (i == currentDay) && day.classList.add('calendar__day-number--current');
     week.append(day);
@@ -28,7 +28,7 @@ for (i = 1; i <= daysInMonth; i++) {
 
         if(i != daysInMonth) {
             week = document.createElement('div');
-            week.classList.add('.celendar__day-numbers-row');
+            week.classList.add('calendar__day-numbers-row');
         }
     }
 }
